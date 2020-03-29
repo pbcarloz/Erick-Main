@@ -1,0 +1,135 @@
+html{
+    background: url(Background2.png) no-repeat center center fixed ;
+    background-size: cover;
+}
+body{
+    margin:auto 0;
+  }
+#ShadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+.container1{
+    background: linear-gradient(to right,#ff0000, #ff00dd, #2600ff , #00f7ff, #00ff22, #eeff00, #ff0800);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 10s ease-in-out infinite;
+    background-size: 400% 100%;
+    padding-top: 40vh;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 7vh;
+    /* border: 3px solid gold; */
+}
+@media only screen and (max-width:900px) {
+    .container1{
+        font-size:4.5vh ;
+        margin-top:20vh ;
+    }
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+.container2{
+    /* here my name shall be! */
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+    margin-top: -5vh;
+    text-align: right;
+    /* border:3px solid gold; */
+}
+@media only screen and (max-width:900px) {
+    .container2{
+        font-size:3.5vh ;
+        padding-top: 1.5vh;
+    }
+} 
+.container3{
+    /* here you find the 3 links */
+    display: grid;
+    grid-template-columns:30vw 33vw 30vw ;
+    grid-template-rows: 15vh;
+    margin: 10vh 2vw;
+    grid-column-gap: 1vw ;
+    /* border: 1px solid rgba(255, 255, 255, 0.411); */
+}
+@media only screen and (max-width:900px) {
+    .container3{
+        margin: 7vh 2vw;
+    }
+} 
+.container4{
+    /* about me */
+    text-align: center;
+    padding-top: 4vh;
+    font-size: 5vh;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.342);
+    /* border: 1px solid rgba(255, 255, 255, 0.411); */
+}
+@media only screen and (max-width:900px) {
+    .container4{
+        font-size:3vh ;
+        height: 4vh;
+        padding-top: 1vh;
+    }
+}
+.container4:hover{
+    transition: all 2s ;
+    transform: scale(1.1);
+}
+.container5{
+    /* Portfolio */
+    text-align: center;
+    padding-top: 4vh;
+    font-size: 5vh;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.342);
+    /* border: 1px solid rgba(255, 255, 255, 0.411); */
+}
+@media only screen and (max-width:900px) {
+    .container5{
+        font-size:3vh ;
+        height: 4vh;
+        padding-top: 1vh;
+    }
+}
+.container5:hover{
+    transition: all 2s ;
+    transform: scale(1.1);
+}
+.container6{
+    /* Contact */
+    text-align: center;
+    padding-top: 4vh;
+    font-size: 5vh;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.342);
+    /* border: 1px solid rgba(255, 255, 255, 0.411); */
+}
+@media only screen and (max-width:900px) {
+    .container6{
+        font-size:3vh ;
+        height: 4vh;
+        padding-top: 1vh;
+    }
+}
+.container6:hover{ 
+    transition: all 2s ;
+    transform: scale(1.1);
+}
