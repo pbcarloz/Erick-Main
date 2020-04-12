@@ -172,7 +172,7 @@ body{
 @media only screen and (max-width:900px) {
     .container7{
         grid-template-columns: 20vw 25vw 25vw 17vw;
-        grid-template-rows: 15vh 20vh 25vh 25vh 15vh;
+        grid-template-rows: 15vh 20vh 25vh 30vh 15vh;
         row-gap: 0vw;
         min-height: min-content;
     }
@@ -189,7 +189,7 @@ body{
 @media only screen and (max-width:900px) {
     .container8{
         grid-column-start: 1;
-        grid-column-end: 3 ;
+        grid-column-end: 5 ;
         grid-row-start: 0;
         padding-top: 0vh;
     }
@@ -217,6 +217,11 @@ body{
     line-height: 0.1;
     font-weight: bold;
 }
+@media only screen and (max-width:900px) {
+    .p1{
+        font-size: 7vh;
+    }
+}
 .p2{
     color: white;
     font-size: 2.5vh;
@@ -229,7 +234,6 @@ hr{
         margin-top: -4vh;
     }
 }
-
 .p3{
     color: white;
     font-size: 2.5vh;
