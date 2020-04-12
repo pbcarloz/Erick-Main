@@ -167,14 +167,15 @@ body{
     row-gap: 2vh;
     column-gap: 2vw;
     min-height: 90vh;
-    background: linear-gradient(to right, #000000, #201313f1,#311010ef, #8b0000);
+    background: linear-gradient(to right, #000000f6, #2a0000ef);
 }
 .container8{
     grid-column-start: 1;
     grid-column-end: 3 ;
-    color: rgb(194, 0, 0);
-    font-size: 4vh;
-    font-weight: bold;
+    color: rgb(204, 204, 204);
+    font-size: 2vh;
+    padding-top: 18vh;
+    padding-left: 2vw;
     /* border: 3px solid rgb(255, 0, 0); */
 }
 .container9{
@@ -183,11 +184,13 @@ body{
     grid-column-end: 3 ;
     grid-row-start: 2;
     padding-left: 2vw;
+    place-self: center;
     /* border: 3px solid rgb(255, 0, 0); */
 }
 .p1{
-    color: white;
-    font-size: 3vh;
+    color: rgb(195, 0, 0);
+    font-size: 10vh;
+    line-height: 0.1;
     font-weight: bold;
 }
 .p2{
@@ -213,11 +216,11 @@ a{
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 5;
     place-self: center;
     /* border: 3px solid rgb(255, 0, 0); */
 }
 .sunriseimage{
     max-width: auto;
-    max-height: 55vh;
+    max-height: 80vh;
 }
