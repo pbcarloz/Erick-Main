@@ -1,17 +1,20 @@
 html{
     background: url(Background2.png) no-repeat center center fixed ;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 body{
     margin:auto 0;
   }
-#ShadowBox {
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.2);
-    /* Black w/opacity/see-through */
-    border: 3px solid;
+.container{
+    /* border: 3px solid gold; */
+    min-height: 99vh;
 }
+@media only screen and (max-width:900px) {
+    .container{
+        min-height: 80vh;
+    }
+} 
 .container1{
     background: linear-gradient(to right,#ff0000, #ff00dd, #2600ff , #00f7ff, #00ff22, #eeff00, #ff0800);
     -webkit-background-clip: text;
@@ -23,12 +26,14 @@ body{
     text-align: right;
     text-transform: uppercase;
     font-size: 7vh;
+    margin-right: 3vw;
     /* border: 3px solid gold; */
 }
 @media only screen and (max-width:900px) {
     .container1{
         font-size:4.5vh ;
         margin-top:20vh ;
+        margin-right: 10vw;
     }
 }
 @keyframes rainbow_animation {
@@ -44,29 +49,49 @@ body{
     color: rgb(255, 255, 255);
     font-size: 5vh;
     margin-top: -5vh;
+    margin-right: 3vw;
     text-align: right;
     /* border:3px solid gold; */
 }
 @media only screen and (max-width:900px) {
     .container2{
         font-size:3.5vh ;
+        margin-right: 10vw;
         padding-top: 1.5vh;
     }
 } 
 .container3{
-    /* here you find the 3 links */
-    display: grid;
-    grid-template-columns:30vw 33vw 30vw ;
-    grid-template-rows: 15vh;
-    margin: 10vh 2vw;
-    grid-column-gap: 1vw ;
-    /* border: 1px solid rgba(255, 255, 255, 0.411); */
+    /* here you find the arrow container*/
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    min-width: 10vw;
+    max-width: 50vw;
+    margin-top: 10vh;
+    margin-left: 25vw;
+}
+.arrowdown{
+    /* arrow image modifications here */
+    width: auto;
+    height: 10vw;
 }
 @media only screen and (max-width:900px) {
     .container3{
-        margin: 7vh 2vw;
+        margin-top: 0;
     }
 } 
+@media only screen and (max-width:900px) {
+    .arrowdown{
+        width: 15vw;
+        height: auto;
+    }
+} 
+.container3:hover {
+    transition: 2s ;
+    transition-timing-function: ease;
+    transform: scale(1.2)
+}
+
 .container4{
     /* about me */
     text-align: center;
@@ -132,4 +157,67 @@ body{
 .container6:hover{ 
     transition: all 2s ;
     transform: scale(1.1);
+}
+.container7{
+    padding: 2vw;
+    /* border: 3px solid rgb(255, 0, 0); */
+    display: grid;
+    grid-template-columns: 20vw 25vw 25vw 20vw;
+    grid-template-rows: 25vh 40vh 25vh;
+    row-gap: 2vh;
+    column-gap: 2vw;
+    min-height: 90vh;
+    background: linear-gradient(to right, #000000, #201313f1,#311010ef, #8b0000);
+}
+.container8{
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+    color: rgb(194, 0, 0);
+    font-size: 4vh;
+    font-weight: bold;
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+.container9{
+    text-align: justify;
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+    grid-row-start: 2;
+    padding-left: 2vw;
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+.p1{
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+}
+.p2{
+    color: white;
+    font-size: 2.5vh;
+}
+hr{
+    max-width: 75vw;
+}
+
+.p3{
+    color: white;
+    font-size: 2.5vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.gitname{
+    color: rgb(255, 9, 255);
+}
+.container10{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    place-self: center;
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+.sunriseimage{
+    max-width: auto;
+    max-height: 55vh;
 }
