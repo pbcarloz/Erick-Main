@@ -166,7 +166,10 @@ body{
     grid-template-rows: 25vh 40vh 25vh;
     row-gap: 2vh;
     column-gap: 2vw;
-    min-height: 90vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    min-width: 100vw;
     background: linear-gradient(to right, #000000f6, #2a0000ef);
     /* border: 3px solid rgb(255, 0, 0); */
 }
